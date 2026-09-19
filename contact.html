@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact & Menu - Bipon Coffee</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bipon Coffee</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Menu & Pricing Table</h2>
+            <table>
+                <caption>Bipon Coffee Special Menu & Prices</caption>
+                
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Price ($)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Espresso</th>
+                        <td>Hot Coffee</td>
+                        <td>Single / Double</td>
+                        <td>3.50</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cappuccino</th>
+                        <td>Hot Coffee</td>
+                        <td>Medium (12 oz)</td>
+                        <td>4.50</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Iced Caramel Latte</th>
+                        <td>Cold Coffee</td>
+                        <td>Large (16 oz)</td>
+                        <td>5.25</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cold Brew</th>
+                        <td>Cold Coffee</td>
+                        <td>Medium (12 oz)</td>
+                        <td>4.75</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Matcha Latte</th>
+                        <td>Tea & Specials</td>
+                        <td>Large (16 oz)</td>
+                        <td>5.50</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Seasonal Discount (All Drinks)</td>
+                        <td>-$0.50</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact & Order Inquiry Form</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Beibarys Ualihan" required maxlength="50">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="beibarys@example.com" required>
+                    </p>
+
+                    <p>
+                        <label for="quantity">Drink Quantity (1-10):</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    </p>
+
+                    <p>
+                        <label for="visit-date">Preferred Pickup Date:</label><br>
+                        <input type="date" id="visit-date" name="visit-date">
+                    </p>
+
+                    <p>
+                        <label>Preferred Milk Type:</label><br>
+                        <input type="radio" id="whole" name="milk" value="whole" checked>
+                        <label for="whole">Whole Milk</label><br>
+
+                        <input type="radio" id="oat" name="milk" value="oat">
+                        <label for="oat">Oat Milk</label><br>
+
+                        <input type="radio" id="almond" name="milk" value="almond">
+                        <label for="almond">Almond Milk</label>
+                    </p>
+
+                    <p>
+                        <label for="message">Message or Special Requests:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="40" placeholder="Type your message here..."></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Submit Inquiry</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bipon Coffee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

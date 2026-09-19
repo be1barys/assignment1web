@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: rgb(53, 51, 51);     
+    background-color: #f9f6f0;       
+    margin: 0;
+    padding: 1.25rem; 
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; 
+    font-weight: bold;
+    text-align: center;
+    color: rgb(170, 83, 83);                   
+}
+
+#main-container {                  
+    max-width: 80%;                 
+    margin: 0 auto;
+    padding: 1.25rem;
+    border: 2px solid hsl(25, 60%, 40%); 
+    background-color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0.9375rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    padding: 0.5rem 0.9375rem;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: brown;
+    border-radius: 14px;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid brown;
+}
+
+/* 4. Data Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: brown;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+fieldset {
+    border: 2px solid brown;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 95%;
+    padding: 0.5em;                
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: brown;
+    box-shadow: 0 0 5px rgba(165, 42, 42, 0.5);
+    background-color: #fffef0;
+}
+
+button {
+    padding: 10px 20px;            
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(120, 20, 20);
+}
