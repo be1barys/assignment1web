@@ -22,6 +22,9 @@ h1, h2, h3 {
 }
 
 nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -52,6 +55,7 @@ nav a.active {
 
 table {
     width: 100%;
+    border-collapse: collapse;
     margin: 1.25rem 0;
 }
 
@@ -66,6 +70,9 @@ th {
     color: white;
 }
 
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 fieldset {
     border: 2px solid brown;
@@ -88,6 +95,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-color: brown;
+    box-shadow: 0 0 5px rgba(165, 42, 42, 0.5);
     background-color: #fffef0;
 }
 
@@ -101,4 +109,58 @@ button {
 
 button:hover {
     background-color: rgb(120, 20, 20);
+}
+
+.custom-menu-section {
+  padding: 30px 15px;
+  background-color: #f4f1ea;
+}
+
+.custom-menu-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 15px;
+}
+
+.custom-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0dcd3;
+  text-align: center;
+}
+
+.custom-card h3 {
+  margin-top: 0;
+  color: #5a3e2b;
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+
+  .custom-menu-title {
+    font-size: 32px; 
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+
+  .custom-menu-section {
+    padding: 60px 50px;
+  }
 }
